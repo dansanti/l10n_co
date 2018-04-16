@@ -12,7 +12,7 @@
     'category': 'Localization',
     'depends': [
         'account',
-        'l10n_co_base',
+        'l10n_co_bases',
     ],
     'data':[
         'data/l10n_co_chart_template_commercial.xml',
