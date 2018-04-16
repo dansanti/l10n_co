@@ -1,0 +1,5 @@
+id,code,name,format_layout
+CUENTA_AHORROS,AHORROS,Cuenta de Ahorros,%(bank_name)s: %(state)s - %(acc_number)s
+CUENTA_CORRIENTE,CORRIENTE,Cuenta Corriente,%(bank_name)s: %(state)s - %(acc_number)s
+TARJETA_CREDITO,TARJETA_CRÉDITO,Tarjeta de Crédito,%(bank_name)s: %(state)s - %(acc_number)s
+CREDITO_ROTATIVO,CRÉDITO_ROTATIVO,Crédito Rotativo,%(bank_name)s: %(state)s - %(acc_number)s

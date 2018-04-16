@@ -1,0 +1,8 @@
+id,chart_template_id/id,name,note
+ID_C_REGIMEN_SIMPLIFICADO,l10n_co_comercial,Simplificado,Regimen Simplificado
+ID_C_REGIMEN_NATUTAL_COMUN,l10n_co_comercial,P/Natural Común,Regimen Comun
+ID_C_REGIMEN_COMUN,l10n_co_comercial,Común,Regimen Comun
+ID_C_REGIMEN_COMUN_AUTORETENEDOR,l10n_co_comercial,Común Auto-retenedor,Regimen Comun Auto-retenedor
+ID_C_GRAN_CONTRIBUYENTE,l10n_co_comercial,Gran Contribuyente,Gran Contribuyente
+ID_C_AUTORETENEDOR,l10n_co_comercial,Gran Contribuyente  Auto-retenedor,Gran Contribuyente  Auto-retenedor
+ID_C_REGIMEN_ESPECIAL,l10n_co_comercial,Internacional,Internacional

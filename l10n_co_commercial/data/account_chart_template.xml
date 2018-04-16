@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="account_reports_co_statements_menu" name="Colombian Statements" parent="account.menu_finance_reports" sequence="3" groups="account.group_account_user"/>
+    
+        <!-- Chart Template -->
+        <record id="co_coa_commercial" model="account.chart.template">
+            <field name="property_account_receivable_id" ref="ID_C130505"/>
+            <field name="property_account_payable_id" ref="ID_C220505"/>
+            <field name="property_account_expense_categ_id" ref="ID_C613595"/>
+            <field name="property_account_income_categ_id" ref="ID_C413595"/>
+            <field name="income_currency_exchange_account_id" ref="ID_C421020"/>
+            <field name="expense_currency_exchange_account_id" ref="ID_C530525"/>
+
+            <field name="complete_tax_set" eval="True"/>
+            <field name="use_anglo_saxon" eval="True"/>
+
+            <field name="property_stock_account_input_categ_id" ref="ID_C146520"/>
+            <field name="property_stock_account_output_categ_id" ref="ID_C146520"/>
+            <field name="property_stock_valuation_account_id" ref="ID_C143501"/>
+        </record>
+
+        <!-- Tax template for sale and purchase
+        <record id="ID_C_VENTAS_SERVICIOS_IVA_19" model="account.tax.template">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="name">Tax 19%</field>
+            <field name="amount">19</field>
+            <field name="type_tax_use">sale</field>
+            <field name="account_id" ref="ID_C240805"/>
+            <field name="refund_account_id" ref="ID_C240805"/>
+        </record>
+
+       <record id="ID_C_COMPRAS_SERVICIOS_IVA_19" model="account.tax.template">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="name">Purchase Tax 19%</field>
+            <field name="amount">19</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="account_id" ref="ID_C240810"/>
+            <field name="refund_account_id" ref="ID_C240810"/>
+        </record>
+        -->
+</odoo>

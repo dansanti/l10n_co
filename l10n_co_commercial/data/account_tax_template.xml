@@ -1,0 +1,1535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="False">
+
+        <!-- IVA Excluido -->
+
+        <record model="account.tax.template" id="ID_C_VENTAS_IVA_EXCLUIDAS">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">IVA Excluido (V)</field>
+            <field name="description">IVA_EXCLUIDOV</field>
+            <field name="amount">0.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+        </record>
+        <record model="account.tax.template" id="ID_C_COMPRAS_IVA_EXENTAS">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">IVA Exento (C)</field>
+            <field name="description">IVA_EXENTOC</field>
+            <field name="amount">0.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+        </record>
+
+        <!-- IVA Exento -->
+
+        <record model="account.tax.template" id="ID_C_VENTAS_IVA_EXENTAS">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">IVA Exento (V)</field>
+            <field name="description">IVA_EXENTOV</field>
+            <field name="amount">0.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+        </record>
+        <record model="account.tax.template" id="ID_C_COMPRAS_IVA_EXCLUIDAS">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">IVA Excluido (C)</field>
+            <field name="description">IVA_EXCLUIDOC</field>
+            <field name="amount">0.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+        </record>
+
+        <!-- IVA Bienes -->
+        <!-- IVA Bienes 5% -->
+
+        <record model="account.tax.template" id="ID_C_VENTAS_IVA_5">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">IVA 5% (VB)</field>
+            <field name="description">IVA5VB</field>
+            <field name="amount">5.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name='account_id'  ref="ID_C240805"/>
+            <field name='refund_account_id'  ref="ID_C240805"/>
+        </record>
+        <record model="account.tax.template" id="ID_C_COMPRAS_IVA_5">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">IVA 5% (CB)</field>
+            <field name="description">IVA5CB</field>
+            <field name="amount">5.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name='account_id'  ref="ID_C240810"/>
+            <field name='refund_account_id'  ref="ID_C240810"/>
+        </record>
+
+        <!-- IVA Bienes 8% -->
+
+        <record model="account.tax.template" id="ID_C_VENTAS_IVA_8">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">IVA 8% (VB)</field>
+            <field name="description">IVA8VB</field>
+            <field name="amount">8.00</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name='account_id'  ref="ID_C240805"/>
+            <field name='refund_account_id'  ref="ID_C240805"/>
+        </record>
+        <record model="account.tax.template" id="ID_C_COMPRAS_IVA_8">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">IVA 8% (CB)</field>
+            <field name="description">IVA8CB</field>
+            <field name="amount">8.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name='account_id'  ref="ID_C240810"/>
+            <field name='refund_account_id'  ref="ID_C240810"/>
+        </record>
+
+        <!-- IVA Bienes 10% -->
+
+        <record model="account.tax.template" id="ID_C_VENTAS_IVA_10">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">IVA 10% (VB)</field>
+            <field name="description">IVA10VB</field>
+            <field name="amount">10.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name='account_id'  ref="ID_C240805"/>
+            <field name='refund_account_id'  ref="ID_C240805"/>
+        </record>
+        <record model="account.tax.template" id="ID_C_COMPRAS_IVA_10">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">IVA 10% (CB)</field>
+            <field name="description">IVA10CB</field>
+            <field name="amount">10.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name='account_id'  ref="ID_C240810"/>
+            <field name='refund_account_id'  ref="ID_C240810"/>
+        </record>
+
+        <!-- IVA Bienes 19% -->
+
+        <record model="account.tax.template" id="ID_C_VENTAS_IVA_19">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">25</field>
+            <field name="name">IVA 19% (VB)</field>
+            <field name="description">IVA19VB</field>
+            <field name="amount">19.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name='account_id'  ref="ID_C240805"/>
+            <field name='refund_account_id'  ref="ID_C240805"/>
+        </record>
+        <record model="account.tax.template" id="ID_C_COMPRAS_IVA_19">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">25</field>
+            <field name="name">IVA 19% (CB)</field>
+            <field name="description">IVA19CB</field>
+            <field name="amount">19.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name='account_id'  ref="ID_C240810"/>
+            <field name='refund_account_id'  ref="ID_C240810"/>
+        </record>
+
+        <!-- IVA 19% Servicios -->
+
+        <record model="account.tax.template" id="ID_C_VENTAS_SERVICIOS_IVA_19">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">IVA 19% (VS)</field>
+            <field name="description">IVA19VS</field>
+            <field name="amount">19.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name='account_id'  ref="ID_C240805"/>
+            <field name='refund_account_id'  ref="ID_C240805"/>
+        </record>
+        <record model="account.tax.template" id="ID_C_COMPRAS_IVA_SERVICIOS_ADUANA_19">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">IVA 19% (CSA)</field> <!-- IVA 19% Compra Servicios Aduaneros-->
+            <field name="description">IVA19CSA</field>
+            <field name="amount">19.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name='account_id'  ref="ID_C240810"/>
+            <field name='refund_account_id'  ref="ID_C240810"/>
+        </record>
+
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_IMPORTACION_IVA_19">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">IVA 19% (CI)</field>
+            <field name="description">IVA19CI</field>
+            <field name="amount">19.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name='account_id'  ref="ID_C240810"/>
+            <field name='refund_account_id'  ref="ID_C240810"/>
+        </record>
+
+        <!-- IVA 20% Compras -->
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_IVA_20">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">IVA 20% (C)</field>
+            <field name="description">IVA20C</field>
+            <field name="amount">20.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+
+
+
+
+
+            <!-- Cuenta: 234580 "Valor pagado (DB)" -->
+
+            <field name='account_id'  ref="ID_C240810"/>
+            <field name='refund_account_id'  ref="ID_C240810"/>
+
+        </record>
+
+        <!-- IVA 19% Compras Incluido en el Precio -->
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_PI_IVA_19">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">IVA 19% (PC)</field>
+            <field name="description">PIIVA19C</field>
+            <field name="amount">19.0</field>
+            <field name="price_include" eval="True" />
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+
+
+
+
+
+            <!-- Cuenta: 234580 "Valor pagado (DB)" -->
+
+            <field name='account_id'  ref="ID_C240810"/>
+            <field name='refund_account_id'  ref="ID_C240810"/>
+
+        </record>
+
+       <!-- IVA 19% Compras Servicios -->
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_SERVICIOS_IVA_19">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">IVA 19% (CS)</field>
+            <field name="description">IVA19CS</field>
+            <field name="amount">19.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+
+
+
+
+
+            <!-- Cuenta: 234580 "Valor pagado (DB)" -->
+
+            <field name='account_id'  ref="ID_C240810"/>
+            <field name='refund_account_id'  ref="ID_C240810"/>
+
+        </record>
+
+
+        <!-- IVA Teórico
+
+                    IVA Teorico 15% del IVA 19% = 0.024
+
+        -->
+
+        <!-- Contrapartida ***************************************************************************************-->
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_RS_IVA_CONTRAPARTIDA">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">IVA Teórico (15%) Contrapartida</field>
+            <field name="description">IVAT15C</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="amount">-2.4</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name='account_id'  ref="ID_C236705"/>
+            <field name='refund_account_id'  ref="ID_C236705"/>
+        </record>
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_RS_IVA_19">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">IVA Teórico (15%)</field>
+            <field name="description">IVAT15</field>
+            <field name="amount">2.4</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name='account_id'  ref="ID_C240810"/>
+            <field name='refund_account_id'  ref="ID_C240810"/>
+        </record>
+        <record model="account.tax.template" id="ID_C_COMPRAS_RS_IVA_TEORICO_B">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">IVA Teórico Servicios (15%) Bienes</field>
+            <field name="amount">1.0</field>
+            <field name="amount_type">group</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="children_tax_ids" eval="[(6,0,[ref('ID_C_COMPRAS_RS_IVA_CONTRAPARTIDA'), ref('ID_C_COMPRAS_RS_IVA_19')])]"/>
+        </record>
+        <!-- IVA Teórico Servicios
+
+                    IVA Teorico 15% del IVA 19% = 0.024
+
+        -->
+
+
+        <!-- Contrapartida -->
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_RS_IVA_CONTRAPARTIDA_S">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">IVA Teórico Servicios (15%) Contrapartida</field>
+            <field name="description">IVAT15CS</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="amount">-2.4</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name='account_id'  ref="ID_C236705"/>
+            <field name='refund_account_id'  ref="ID_C236705"/>
+        </record>
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_RS_IVA_19_S">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">IVA Teórico Servicios (15%)</field>
+            <field name="description">IVAT15S</field>
+            <field name="amount">2.4</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name='account_id'  ref="ID_C240810"/>
+            <field name='refund_account_id'  ref="ID_C240810"/>
+        </record>
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_RS_IVA_TEORICO_S">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">IVA Teórico Servicios (15%) Servicios</field>
+            <field name="amount">1.0</field>
+            <field name="amount_type">group</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="children_tax_ids" eval="[(6,0,[ref('ID_C_COMPRAS_RS_IVA_19_S'), ref('ID_C_COMPRAS_RS_IVA_CONTRAPARTIDA_S')])]"/>
+        </record>
+
+
+        <!-- Retencion IVA 15% sobre el 5%-->
+
+        <record model="account.tax.template" id="ID_C_RF_VENTAS_IVA_05">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RIVA 15% IVA 5%(V)</field>
+            <field name="description">RIVA15V05</field>
+            <field name="type_tax_use">sale</field>
+            <field name="amount">-0.75</field>
+            <field name="amount_type">percent</field>
+            <field name='account_id'  ref="ID_C135517"/>
+            <field name='refund_account_id'  ref="ID_C135517"/>
+        </record>
+
+        <!-- Retencion IVA 15% sobre el 8%-->
+
+        <record model="account.tax.template" id="ID_C_RF_VENTAS_IVA_08">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RIVA 15% IVA 8%(V)</field>
+            <field name="description">RIVA15V08</field>
+            <field name="type_tax_use">sale</field>
+            <field name="amount">-1.2</field>
+            <field name="amount_type">percent</field>
+            <field name='account_id'  ref="ID_C135517"/>
+            <field name='refund_account_id'  ref="ID_C135517"/>
+
+        </record>
+
+        <!-- Retencion IVA 15% sobre el 19%-->
+
+        <record model="account.tax.template" id="ID_C_RF_VENTAS_IVA_19">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RIVA 15% IVA 19%(V)</field>
+            <field name="description">RIVA15V</field>
+            <field name="type_tax_use">sale</field>
+            <field name="amount">-2.4</field>
+            <field name="amount_type">percent</field>
+            <field name='account_id'  ref="ID_C135517"/>
+            <field name='refund_account_id'  ref="ID_C135517"/>
+
+        </record>
+
+        <!-- Retencion IVA 50% -->
+
+        <record model="account.tax.template" id="ID_C_RF_VENTAS_IVA_50">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RIVA 50% (V)</field>
+            <field name="description">RIVA50V</field>
+            <field name="type_tax_use">sale</field>
+            <field name="amount">-8.0</field>
+            <field name="amount_type">percent</field>
+            <field name='account_id'  ref="ID_C135517"/>
+            <field name='refund_account_id'  ref="ID_C135517"/>
+        </record>
+
+        <!-- Retencion IVA 70% -->
+
+        <record model="account.tax.template" id="ID_C_RF_VENTAS_IVA_70">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RIVA 70% (V)</field>
+            <field name="description">RIVA70V</field>
+            <field name="type_tax_use">sale</field>
+            <field name="amount">-11.2</field>
+            <field name="amount_type">percent</field>
+            <field name='account_id'  ref="ID_C135517"/>
+            <field name='refund_account_id'  ref="ID_C135517"/>
+
+        </record>
+
+        <record model="account.tax.template" id="ID_C_RF_COMPRAS_IVA_15">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RIVA 15% (C)</field>
+            <field name="description">RIVA15C</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="amount">-2.4</field>
+            <field name="amount_type">percent</field>
+            <field name='account_id'  ref="ID_C236540"/>
+            <field name='refund_account_id'  ref="ID_C236540"/>
+
+        </record>
+
+        <record model="account.tax.template" id="ID_C_RF_COMPRAS_IVA_119">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RIVA 119% (C)</field>
+            <field name="description">RIVA119C</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="amount">-19.0</field>
+            <field name="amount_type">percent</field>
+            <field name='account_id'  ref="ID_C236540"/>
+            <field name='refund_account_id'  ref="ID_C236540"/>
+
+        </record>
+
+        <!-- Retencion en la FUENTE VENTASS -->
+
+        <record model="account.tax.template" id="ID_C_VENTAS_RF_01">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 0.1% Combustibles (V)</field>
+            <field name="description">RF01VC</field>
+            <field name="amount">-1.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+
+
+            <field name='account_id'  ref="ID_C135515"/>
+            <field name='refund_account_id'  ref="ID_C135515"/>
+
+        </record>
+
+        <record model="account.tax.template" id="ID_C_VENTAS_RFVTC_1">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 1% T.Carga (V)</field>
+            <field name="description">RF1VTC</field>
+            <field name="amount">-1.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+
+
+
+
+
+            <!-- Cuenta: 142202 "Retención en la fuente" -->
+
+            <field name='account_id'  ref="ID_C135515"/>
+            <field name='refund_account_id'  ref="ID_C135515"/>
+
+        </record>
+
+        <record model="account.tax.template" id="ID_C_VENTAS_RFVTP_35">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 3.5% T.Pasajeros (V)</field>
+            <field name="description">RF35VTP</field>
+            <field name="amount">-3.5</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+
+
+
+
+
+            <!-- Cuenta: 142202 "Retención en la fuente" -->
+
+            <field name='account_id'  ref="ID_C135515"/>
+            <field name='refund_account_id'  ref="ID_C135515"/>
+
+        </record>
+
+        <record model="account.tax.template" id="ID_C_VENTAS_RF_1_5">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 1.5% (V)</field>
+            <field name="description">RF15V</field>
+            <field name="amount">-1.5</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+
+
+
+
+
+            <!-- Cuenta: 142202 "Retención en la fuente" -->
+
+            <field name='account_id'  ref="ID_C135515"/>
+            <field name='refund_account_id'  ref="ID_C135515"/>
+
+        </record>
+
+        <record model="account.tax.template" id="ID_C_VENTAS_RF_2">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 2% (V)</field>
+            <field name="description">RF2V</field>
+            <field name="amount">-2.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+
+
+
+
+
+            <!-- Cuenta: 142202 "Retención en la fuente" -->
+
+            <field name='account_id'  ref="ID_C135515"/>
+            <field name='refund_account_id'  ref="ID_C135515"/>
+
+        </record>
+
+        <record model="account.tax.template" id="ID_C_VENTAS_RF_2_5">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 2.5% (V)</field>
+            <field name="description">RF25V</field>
+            <field name="amount">-2.5</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+
+
+
+
+
+            <!-- Cuenta: 142202 "Retención en la fuente" -->
+
+            <field name='account_id'  ref="ID_C135515"/>
+            <field name='refund_account_id'  ref="ID_C135515"/>
+
+        </record>
+
+        <record model="account.tax.template" id="ID_C_VENTAS_RF_3_5_VS">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 3.5% (VS)</field>
+            <field name="description">RF35VS</field>
+            <field name="amount">-3.5</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+
+
+
+
+
+            <!-- Cuenta: 142202 "Retención en la fuente" -->
+
+            <field name='account_id'  ref="ID_C135515"/>
+            <field name='refund_account_id'  ref="ID_C135515"/>
+
+        </record>
+
+        <record model="account.tax.template" id="ID_C_VENTAS_RF_3_5">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 3.5% (V)</field>
+            <field name="description">RF35V</field>
+            <field name="amount">-3.5</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+
+
+
+
+
+            <!-- Cuenta: 142202 "Retención en la fuente" -->
+
+            <field name='account_id'  ref="ID_C135515"/>
+            <field name='refund_account_id'  ref="ID_C135515"/>
+
+        </record>
+
+        <record model="account.tax.template" id="ID_C_VENTAS_RF_3_5_INMUEBLES">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 3.5% Inmuebles (V)</field>
+            <field name="description">RF35V_I</field>
+            <field name="amount">-3.5</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+
+
+
+
+
+            <!-- Cuenta: 142202 "Retención en la fuente" -->
+
+            <field name='account_id'  ref="ID_C135515"/>
+            <field name='refund_account_id'  ref="ID_C135515"/>
+
+        </record>
+
+        <record model="account.tax.template" id="ID_C_VENTAS_RF_4_NO_INMUEBLES">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 4% No Inmuebles(V)</field>
+            <field name="description">RF4VNI</field>
+            <field name="amount">-4.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+
+
+
+
+
+            <!-- Cuenta: 142202 "Retención en la fuente" -->
+
+            <field name='account_id'  ref="ID_C135515"/>
+            <field name='refund_account_id'  ref="ID_C135515"/>
+
+        </record>
+
+        <record model="account.tax.template" id="ID_C_VENTAS_RF_4">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 4% (V)</field>
+            <field name="description">RF4V</field>
+            <field name="amount">-4.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+
+
+
+
+
+            <!-- Cuenta: 142202 "Retención en la fuente" -->
+
+            <field name='account_id'  ref="ID_C135515"/>
+            <field name='refund_account_id'  ref="ID_C135515"/>
+
+        </record>
+
+
+        <record model="account.tax.template" id="ID_C_VENTAS_RF_4S">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 4% (VS)</field>
+            <field name="description">RF4VS</field>
+            <field name="amount">-4.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+
+
+
+
+
+            <!-- Cuenta: 142202 "Retención en la fuente" -->
+
+            <field name='account_id'  ref="ID_C135515"/>
+            <field name='refund_account_id'  ref="ID_C135515"/>
+
+        </record>
+
+        <record model="account.tax.template" id="ID_C_VENTAS_RF_6">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 6% (V)</field>
+            <field name="description">RF6V</field>
+            <field name="amount">-6.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+
+
+
+
+
+            <!-- Cuenta: 142202 "Retención en la fuente" -->
+
+            <field name='account_id'  ref="ID_C135515"/>
+            <field name='refund_account_id'  ref="ID_C135515"/>
+
+        </record>
+
+        <record model="account.tax.template" id="ID_C_VENTAS_RF_10">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 10% (V)</field>
+            <field name="description">RF10V</field>
+            <field name="amount">-10.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+
+
+
+
+
+            <!-- Cuenta: 142202 "Retención en la fuente" "Impuesto de industria y comercio retenido" -->
+
+            <field name='account_id'  ref="ID_C135515"/>
+            <field name='refund_account_id'  ref="ID_C135515"/>
+
+        </record>
+
+        <record model="account.tax.template" id="ID_C_VENTAS_RF_11">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 11% (V)</field>
+            <field name="description">RF11V</field>
+            <field name="amount">-11.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+
+
+
+
+
+            <!-- Cuenta: 142202 "Retención en la fuente" "Impuesto de industria y comercio retenido" -->
+
+            <field name='account_id'  ref="ID_C135515"/>
+            <field name='refund_account_id'  ref="ID_C135515"/>
+
+        </record>
+
+        <!-- Retencion en la FUENTE COMPRAS -->
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_RF_01">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 0.1% Combustibles (C)</field>
+            <field name="description">RF01CC</field>
+            <field name="amount">-0.1</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+
+
+
+
+
+            <!-- Cuenta: 142202 "Retención en la fuente" -->
+
+            <field name='account_id'  ref="ID_C236525"/>
+            <field name='refund_account_id'  ref="ID_C236525"/>
+
+        </record>
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_RFCTC_1">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 1% T.Carga (C)</field>
+            <field name="description">RF1CTC</field>
+            <field name="amount">-1.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+
+
+
+
+
+            <!-- Cuenta: 142202 "Retención en la fuente" -->
+
+            <field name='account_id'  ref="ID_C236525"/>
+            <field name='refund_account_id'  ref="ID_C236525"/>
+
+        </record>
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_RFCTP_35">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 3.5% T.Pasajeros (C)</field>
+            <field name="description">RF35CTP</field>
+            <field name="amount">-3.5</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+
+
+
+
+
+            <!-- Cuenta: 142202 "Retención en la fuente" -->
+
+            <field name='account_id'  ref="ID_C236525"/>
+            <field name='refund_account_id'  ref="ID_C236525"/>
+
+        </record>
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_RF_1_5">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 1.5% (C)</field>
+            <field name="description">RF15C</field>
+            <field name="amount">-1.5</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+
+
+
+
+
+            <!-- Cuenta: 142202 "Retención en la fuente" -->
+
+            <field name='account_id'  ref="ID_C236540"/>
+            <field name='refund_account_id'  ref="ID_C236540"/>
+
+        </record>
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_RF_2">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 2% (C)</field>
+            <field name="description">RF2C</field>
+            <field name="amount">-2.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+
+
+
+
+
+            <!-- Cuenta: 142202 "Retención en la fuente" -->
+
+            <field name='account_id'  ref="ID_C236540"/>
+            <field name='refund_account_id'  ref="ID_C236540"/>
+
+        </record>
+
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_RF_2CC">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 2% Contrato Obra (C)</field>
+            <field name="description">RF2COC</field>
+            <field name="amount">-2.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+
+
+
+
+
+            <!-- Cuenta: 142202 "Retención en la fuente" -->
+
+            <field name='account_id'  ref="ID_C236570"/>
+            <field name='refund_account_id'  ref="ID_C236570"/>
+
+        </record>
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_RF_2_5">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 2.5% (C)</field>
+            <field name="description">RF25C</field>
+            <field name="amount">-2.5</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+
+
+
+
+
+            <!-- Cuenta: 142202 "Retención en la fuente" -->
+
+            <field name='account_id'  ref="ID_C236540"/>
+            <field name='refund_account_id'  ref="ID_C236540"/>
+
+        </record>
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_RF_3_5">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 3.5% (C)</field>
+            <field name="description">RF35C</field>
+            <field name="amount">-3.5</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+
+
+
+
+
+            <!-- Cuenta: 142202 "Retención en la fuente" -->
+
+            <field name='account_id'  ref="ID_C236540"/>
+            <field name='refund_account_id'  ref="ID_C236540"/>
+
+        </record>
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_RF_3_5_CS">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 3.5% (CS)</field>
+            <field name="description">RF35CS</field>
+            <field name="amount">-3.5</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+
+
+
+
+
+            <!-- Cuenta: 142202 "Retención en la fuente" -->
+
+            <field name='account_id'  ref="ID_C236540"/>
+            <field name='refund_account_id'  ref="ID_C236540"/>
+
+        </record>
+
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_RF_3_5_INMUEBLES">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 3.5% Inmuebles (C)</field>
+            <field name="description">RF35C_I</field>
+            <field name="amount">-3.5</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+
+
+
+
+
+            <!-- Cuenta: 142202 "Retención en la fuente" -->
+
+            <field name='account_id'  ref="ID_C236530"/>
+            <field name='refund_account_id'  ref="ID_C236530"/>
+
+        </record>
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_RF_4_NO_INMUEBLES">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 4% No Inmuebles(C)</field>
+            <field name="description">RF4CNI</field>
+            <field name="amount">-4.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+
+
+
+
+
+            <!-- Cuenta: 142202 "Retención en la fuente" -->
+
+            <field name='account_id'  ref="ID_C236530"/>
+            <field name='refund_account_id'  ref="ID_C236530"/>
+
+        </record>
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_RF_4">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 4% (C)</field>
+            <field name="description">RF4C</field>
+            <field name="amount">-4.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+
+
+
+
+
+            <!-- Cuenta: 142202 "Retención en la fuente" -->
+
+            <field name='account_id'  ref="ID_C236525"/>
+            <field name='refund_account_id'  ref="ID_C236525"/>
+
+        </record>
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_RF_4_SERVICIOS">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 4% (CS)</field>
+            <field name="description">RF4CS</field>
+            <field name="amount">-4.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+
+
+
+
+
+            <!-- Cuenta: 142202 "Retención en la fuente" -->
+
+            <field name='account_id'  ref="ID_C236525"/>
+            <field name='refund_account_id'  ref="ID_C236525"/>
+
+        </record>
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_RF_2RF">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 4% Rendimiento Financiero (C)</field>
+            <field name="description">RF2RFC</field>
+            <field name="amount">-4.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+
+
+
+
+
+            <!-- Cuenta: 142202 "Retención en la fuente" -->
+
+            <field name='account_id'  ref="ID_C236535"/>
+            <field name='refund_account_id'  ref="ID_C236535"/>
+
+        </record>
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_RF_6">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 6% (C)</field>
+            <field name="description">RF6C</field>
+            <field name="amount">-6.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+
+
+
+
+
+            <!-- Cuenta: 142202 "Retención en la fuente" -->
+
+            <field name='account_id'  ref="ID_C236525"/>
+            <field name='refund_account_id'  ref="ID_C236525"/>
+
+        </record>
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_RF_6_SERVICIOS">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 6% (CS)</field>
+            <field name="description">RF6CS</field>
+            <field name="amount">-6.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+
+
+
+
+
+            <!-- Cuenta: 142202 "Retención en la fuente" -->
+
+            <field name='account_id'  ref="ID_C236525"/>
+            <field name='refund_account_id'  ref="ID_C236525"/>
+
+        </record>
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_RF_10">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 10% Comisiones (C)</field>
+            <field name="description">RF10C</field>
+            <field name="amount">-10.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+
+
+
+
+
+            <!-- Cuenta: 142202 "Retención en la fuente" "Impuesto de industria y comercio retenido" -->
+
+            <field name='account_id'  ref="ID_C236520"/>
+            <field name='refund_account_id'  ref="ID_C236520"/>
+
+        </record>
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_RF_10">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 10% Honorarios (C)</field>
+            <field name="description">RF10CH</field>
+            <field name="amount">-10.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+
+
+
+
+
+            <!-- Cuenta: 142202 "Retención en la fuente" "Impuesto de industria y comercio retenido" -->
+
+            <field name='account_id'  ref="ID_C236515"/>
+            <field name='refund_account_id'  ref="ID_C236515"/>
+
+        </record>
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_RF_11">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 11% Comisiones (C)</field>
+            <field name="description">RF11C</field>
+            <field name="amount">-11.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+
+
+
+
+
+            <field name='account_id'  ref="ID_C236520"/>
+            <field name='refund_account_id'  ref="ID_C236520"/>
+
+        </record>
+
+        <record model="account.tax.template" id="ID_C_VENTAS_RF_11">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 11% Honorarios (V)</field>
+            <field name="description">RF11VH</field>
+            <field name="amount">-11.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+
+            <field name='account_id'  ref="ID_C135517"/>
+            <field name='refund_account_id'  ref="ID_C135517"/>
+
+        </record>
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_RF_11">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">RF 11% Honorarios (C)</field>
+            <field name="description">RF11CH</field>
+            <field name="amount">-11.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+
+            <field name='account_id'  ref="ID_C236515"/>
+            <field name='refund_account_id'  ref="ID_C236515"/>
+
+        </record>
+
+
+        <!-- Rentencion en la fuenta ICA Ventas -->
+
+        <record model="account.tax.template" id="ID_C_VENTAS_RF_ICA_138">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">10</field>
+            <field name="name">ICA 1.38% (V)</field>
+            <field name="description">ICA138V</field>
+            <field name="type_tax_use">sale</field>
+            <field name="amount">-0.138</field>
+            <field name="amount_type">percent</field>
+            <field name='account_id'  ref="ID_C135518"/>
+            <field name='refund_account_id'  ref="ID_C135518"/>
+        </record>
+
+        <record model="account.tax.template" id="ID_C_VENTAS_RF_ICA_414">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">10</field>
+            <field name="name">ICA 4.14% (V)</field>
+            <field name="description">ICA414V</field>
+            <field name="type_tax_use">sale</field>
+            <field name="amount">-0.414</field>
+            <field name="amount_type">percent</field>
+            <field name='account_id'  ref="ID_C135518"/>
+            <field name='refund_account_id'  ref="ID_C135518"/>
+        </record>
+
+        <record model="account.tax.template" id="ID_C_VENTAS_RF_ICA_69">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">10</field>
+            <field name="name">ICA 6.9% (V)</field>
+            <field name="description">ICA69V</field>
+            <field name="type_tax_use">sale</field>
+            <field name="amount">-0.69</field>
+            <field name="amount_type">percent</field>
+            <field name='account_id'  ref="ID_C135518"/>
+            <field name='refund_account_id'  ref="ID_C135518"/>
+        </record>
+
+        <record model="account.tax.template" id="ID_C_VENTAS_RF_ICA_7">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">10</field>
+            <field name="name">ICA 7% (V)</field>
+            <field name="description">ICA7V</field>
+            <field name="type_tax_use">sale</field>
+            <field name="amount">-0.7</field>
+            <field name="amount_type">percent</field>
+            <field name='account_id'  ref="ID_C135518"/>
+            <field name='refund_account_id'  ref="ID_C135518"/>
+        </record>
+
+        <!-- ICA Retension (Definir el el 3ro) -->
+
+        <record model="account.tax.template" id="ID_C_VENTAS_RF_ICA_966">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">10</field>
+            <field name="name">ICA 9.66% (V)</field>
+            <field name="description">ICA966V</field>
+            <field name="type_tax_use">sale</field>
+            <field name="amount">-0.966</field>
+            <field name="amount_type">percent</field>
+            <field name='account_id'  ref="ID_C135518"/>
+            <field name='refund_account_id'  ref="ID_C135518"/>
+        </record>
+
+        <record model="account.tax.template" id="ID_C_VENTAS_RF_ICA_11">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">10</field>
+            <field name="name">ICA 11% (V)</field>
+            <field name="description">ICA11V</field>
+            <field name="type_tax_use">sale</field>
+            <field name="amount">-0.11</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name='account_id'  ref="ID_C135518"/>
+            <field name='refund_account_id'  ref="ID_C135518"/>
+        </record>
+
+        <record model="account.tax.template" id="ID_C_VENTAS_RF_ICA_1104">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">10</field>
+            <field name="name">ICA 11.04% (V)</field>
+            <field name="description">ICA1104V</field>
+            <field name="type_tax_use">sale</field>
+            <field name="amount">-0.1104</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name='account_id'  ref="ID_C135518"/>
+            <field name='refund_account_id'  ref="ID_C135518"/>
+        </record>
+
+        <record model="account.tax.template" id="ID_C_VENTAS_RF_ICA_1308">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">10</field>
+            <field name="name">ICA 13,8% (V)</field>
+            <field name="description">ICA1308V</field>
+            <field name="type_tax_use">sale</field>
+            <field name="amount">-0.138</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name='account_id'  ref="ID_C135518"/>
+            <field name='refund_account_id'  ref="ID_C135518"/>
+        </record>
+
+        <!-- Rentencion en la fuenta ICA Compras -->
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_RF_ICA_138">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">10</field>
+            <field name="name">ICA 1.38% (C)</field>
+            <field name="description">ICA138C</field>
+            <field name="amount">-0.138</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name='account_id'  ref="ID_C236801"/>
+            <field name='refund_account_id'  ref="ID_C236801"/>
+        </record>
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_RF_ICA_414">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">10</field>
+            <field name="name">ICA 4.14% (C)</field>
+            <field name="description">ICA414C</field>
+            <field name="amount">-0.414</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name='account_id'  ref="ID_C236801"/>
+            <field name='refund_account_id'  ref="ID_C236801"/>
+        </record>
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_RF_ICA_5">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">10</field>
+            <field name="name">ICA 5% (C)</field>
+            <field name="description">ICA5C</field>
+            <field name="amount">-0.5</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name='account_id'  ref="ID_C236801"/>
+            <field name='refund_account_id'  ref="ID_C236801"/>
+        </record>
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_RF_ICA_6">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">10</field>
+            <field name="name">ICA 6% (C)</field>
+            <field name="description">ICA6C</field>
+            <field name="amount">-0.6</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name='account_id'  ref="ID_C236801"/>
+            <field name='refund_account_id'  ref="ID_C236801"/>
+        </record>
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_RF_ICA_69">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">10</field>
+            <field name="name">ICA 6.9% (C)</field>
+            <field name="description">ICA69C</field>
+            <field name="amount">-0.69</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name='account_id'  ref="ID_C236801"/>
+            <field name='refund_account_id'  ref="ID_C236801"/>
+        </record>
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_RF_ICA_7">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">10</field>
+            <field name="name">ICA 7% (C)</field>
+            <field name="description">ICA7C</field>
+            <field name="amount">-0.7</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name='account_id'  ref="ID_C236801"/>
+            <field name='refund_account_id'  ref="ID_C236801"/>
+        </record>
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_RF_ICA_966">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">10</field>
+            <field name="name">ICA 9.66% (C)</field>
+            <field name="description">ICA966C</field>
+            <field name="amount">-0.966</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name='account_id'  ref="ID_C236801"/>
+            <field name='refund_account_id'  ref="ID_C236801"/>
+        </record>
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_RF_ICA_11">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">10</field>
+            <field name="name">ICA 11% (C)</field>
+            <field name="description">ICA11C</field>
+            <field name="amount">-0.11</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name='account_id'  ref="ID_C236801"/>
+            <field name='refund_account_id'  ref="ID_C236801"/>
+
+        </record>
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_RF_ICA_1104">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">10</field>
+            <field name="name">ICA 11.04% (C)</field>
+            <field name="description">ICA1104C</field>
+            <field name="amount">-0.1104</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name='account_id'  ref="ID_C236801"/>
+            <field name='refund_account_id'  ref="ID_C236801"/>
+
+        </record>
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_RF_ICA_1308">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">10</field>
+            <field name="name">ICA 13,8% (C)</field>
+            <field name="description">ICA1308C</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="amount">-0.138</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name='account_id'  ref="ID_C236801"/>
+            <field name='refund_account_id'  ref="ID_C236801"/>
+        </record>
+
+        <!-- GASTO 4% Compras -->
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_GASTO_4">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">GASTO 4% (C)</field>
+            <field name="description">GASTO4C</field>
+            <field name="amount">4.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name='account_id'  ref="ID_C513535"/>
+            <field name='refund_account_id'  ref="ID_C513535"/>
+        </record>
+
+        <!-- GASTO 4% Compras -->
+
+        <record model="account.tax.template" id="ID_C_COMPRAS_IPOCONSUMO_8">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">Impuesto al Consumo 8% (C)</field>
+            <field name="description">IC8C</field>
+            <field name="amount">8.0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name='account_id'  ref="ID_C529550"/>
+            <field name='refund_account_id'  ref="ID_C529550"/>
+        </record>
+
+        <!-- IVA 8% Compras -->
+
+
+        <!-- IVA 8% Compras -->
+
+
+        <!-- IVA 10% Compras -->
+
+
+        <!-- IVA 19% Compras -->
+
+
+        <!-- IVA 19% Compras Servicios de Aduana -->
+
+
+        <!-- IVA 19% Compras -->
+
+        <!-- Retención en la fuente a titulo de impuesto sobre la renta a la Equidad- ATR 2014 -->
+
+        <!-- ATR 0.4 -->
+
+
+        <record model="account.tax.template" id="ID_C_VENTAS_RF_ATR_4_CONTRAPARTIDA">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">Contrapartida AUTORETENCION a TR 0.4% (V)</field>
+            <field name="description">CATR4V</field>
+            <field name="amount">0.4</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name='account_id'  ref="ID_C236575"/>
+            <field name='refund_account_id'  ref="ID_C236575"/>
+        </record>
+        <record model="account.tax.template" id="ID_C_VENTAS_RF_ATR_4">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">20</field>
+            <field name="name">AUTORETENCION a TR 0.4% (V)</field>
+            <field name="description">ATR4V</field>
+            <field name="amount">-0.4</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name='account_id'  ref="ID_C135595"/>
+            <field name='refund_account_id'  ref="ID_C135595"/>
+        </record>
+        <record model="account.tax.template" id="ID_C_VENTAS_ATR_4">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">0</field>
+            <field name="name">Autoretención a Título de Renta 0.4% (V)</field>
+            <field name="description">AATR4V</field>
+            <field name="amount">1.0</field>
+            <field name="amount_type">group</field>
+            <field name="type_tax_use">sale</field>
+            <field name="children_tax_ids" eval="[(6,0,[ref('ID_C_VENTAS_RF_ATR_4'), ref('ID_C_VENTAS_RF_ATR_4_CONTRAPARTIDA')])]"/>
+        </record>
+
+        <!-- ATR 0.8 -->
+
+
+        <record model="account.tax.template" id="ID_C_VENTAS_RF_ATR_8_CONTRAPARTIDA">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">Contrapartida AUTORETENCION a TR 0.8% (V)</field>
+            <field name="description">CATR8V</field>
+            <field name="amount">0.8</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name='account_id'  ref="ID_C236575"/>
+            <field name='refund_account_id'  ref="ID_C236575"/>
+        </record>
+        <record model="account.tax.template" id="ID_C_VENTAS_RF_ATR_8">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">20</field>
+            <field name="name">AUTORETENCION a TR 0.8% (V)</field>
+            <field name="description">ATR8V</field>
+            <field name="amount">-0.8</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name='account_id'  ref="ID_C135595"/>
+            <field name='refund_account_id'  ref="ID_C135595"/>
+        </record>
+        <record model="account.tax.template" id="ID_C_VENTAS_ATR_8">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">0</field>
+            <field name="name">Autoretención a Título de Renta 0.8% (V)</field>
+            <field name="description">AATR8V</field>
+            <field name="amount">1.0</field>
+            <field name="amount_type">group</field>
+            <field name="type_tax_use">sale</field>
+            <field name="children_tax_ids" eval="[(6,0,[ref('ID_C_VENTAS_RF_ATR_8'), ref('ID_C_VENTAS_RF_ATR_8_CONTRAPARTIDA')])]"/>
+        </record>
+
+        <!-- ATR 1.6
+         autorretención a título de renta.(ATR)
+        -->
+
+
+        <record model="account.tax.template" id="ID_C_VENTAS_RF_ATR_16_CONTRAPARTIDA">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">15</field>
+            <field name="name">Contrapartida AUTORETENCION a TR 1.6% (V)</field>
+            <field name="description">CATR16V</field>
+            <field name="amount">1.6</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name='account_id'  ref="ID_C236575"/>
+            <field name='refund_account_id'  ref="ID_C236575"/>
+        </record>
+        <record model="account.tax.template" id="ID_C_VENTAS_RF_ATR_16">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">20</field>
+            <field name="name">AUTORETENCION a TR 1.6% (V)</field>
+            <field name="description">ATR16V</field>
+            <field name="amount">-1.6</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name='account_id'  ref="ID_C135595"/>
+            <field name='refund_account_id'  ref="ID_C135595"/>
+        </record>
+        <record model="account.tax.template" id="ID_C_VENTAS_ATR_16">
+            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="sequence">0</field>
+            <field name="name">Autoretención a Título de Renta 1.6% (V)</field>
+            <field name="description">AATR16V</field>
+            <field name="amount">1.0</field>
+            <field name="amount_type">group</field>
+            <field name="type_tax_use">sale</field>
+            <field name="children_tax_ids" eval="[(6,0,[ref('ID_C_VENTAS_RF_ATR_16'), ref('ID_C_VENTAS_RF_ATR_16_CONTRAPARTIDA')])]"/>
+        </record>
+
+
+    </data>
+</odoo>

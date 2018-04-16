@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+		<record id="invoice_supplier_comment_form" model="ir.ui.view">
+      <field name="name">account.invoice.supplier.comment.form</field>
+      <field name="model">account.invoice</field>
+			<field name="inherit_id" ref="account.invoice_supplier_form"/>
+			<field name="arch" type="xml">
+				<field name="comment" position="before">
+					<label for="show_comment"/>
+					<field name="show_comment"/>
+				</field>
+			</field>
+		</record>
+		<record id="invoice_comment_form" model="ir.ui.view">
+      <field name="name">account.invoice.commentform</field>
+      <field name="model">account.invoice</field>
+			<field name="inherit_id" ref="account.invoice_form"/>
+			<field name="arch" type="xml">
+				<field name="comment" position="before">
+					<label for="show_comment"/>
+					<field name="show_comment"/>
+				</field>
+			</field>
+		</record>
+    </data>
+</odoo>

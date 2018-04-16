@@ -1,0 +1,10 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"account.access_account_account_template","account.account.template","account.model_account_account_template","account.group_account_manager",0,0,0,0
+"account.access_account_tax_code_template","account.tax.code.template","account.model_account_tax_code_template","account.group_account_manager",0,0,0,0
+"account.access_account_chart_template","account.chart.template","account.model_account_chart_template","account.group_account_manager",0,0,0,0
+"account.access_account_tax_template","account.tax.template","account.model_account_tax_template","account.group_account_manager",0,0,0,0
+"account.access_account_fiscal_position_template","account.fiscal.position.template","account.model_account_fiscal_position_template","account.group_account_manager",0,0,0,0
+"account.access_account_fiscal_position_tax_template","account.fiscal.position.tax.template","account.model_account_fiscal_position_tax_template","account.group_account_manager",0,0,0,0
+"account.access_account_fiscal_position_account_template","account.fiscal.position.account.template","account.model_account_fiscal_position_account_template","account.group_account_manager",0,0,0,0
+"access_ir_sequence_group_manager","ir_sequence group_account_manager","base.model_ir_sequence","account.group_account_manager",1,1,1,0
+"account.access_account_account_type_invoice","account.account.type invoice","account.model_account_account_type","account.group_account_invoice",1,0,0,0

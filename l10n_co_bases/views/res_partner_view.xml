@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <record id="view_partner_property_form_co" model="ir.ui.view">
+      <field name="name">res.partner.property.form.inherit.co</field>
+      <field name="model">res.partner</field>
+      <field name="priority">20</field>
+      <field name="inherit_id" ref="account.view_partner_property_form"/>
+      <field name="arch" type="xml">
+        <field name="vat" position="replace"/>
+        <field name="name" position="attributes">
+          <attribute name="attrs">{'readonly': [('is_company', '=', False)], 'required': [('is_company', '=', True)]}</attribute>
+        </field>
+        <field name="name" position="after">
+          <h3 attrs="{'invisible': [('is_company', '=', True)]}">
+            <field name="first_name"
+                   placeholder="First Name"
+                   style="width: 49%%"
+                   class="oe_edit_only"
+                   attrs="{'required': [('is_company', '=', False)]}"/>
+            <field name="middle_name"
+                   placeholder="Second Name"
+                   style="width: 49%%"
+                   class="oe_edit_only"/>
+            <field name="last_name"
+                   placeholder="Last Name"
+                   style="width: 49%%"
+                   class="oe_edit_only"
+                   attrs="{'required': [('is_company', '=', False)]}"/>
+            <field name="second_last_name"
+                   placeholder="Last Second Name"
+                   style="width: 49%%"
+                   class="oe_edit_only"/>
+          </h3>
+        </field>
+        <group name="fiscal_information" position="replace"/>
+        <field name="type" position="after">
+          <label for="vat" string="Identificación"/>
+          <div>
+            <field name="display_name"/>
+            <field name="property_account_position_id"
+                   options='{"no_open": True, "no_create": True}'
+                   placeholder="Tipo de Contribuyente"/>
+            <field name="ciiu_id"
+                   options='{"no_open": True, "no_create": True}'
+                   placeholder="Codigo CIIU"/>
+            <field name="vat_type"
+                   placeholder="Tipo de Documento"/>
+            <field name="vat_ref" style="width: 100%%"/>
+            <div class="oe_edit_only">
+                <field name="vat" style="width: 70%%"/> -
+                <field name="vat_vd" style="width: 20%%"
+                       attrs="{'required': [('vat_type', '=', '31')]}"/>
+            </div>
+          </div>
+        </field>
+        <group name="accounting_entries" position="after">
+          <group string="Taxes" name="accounting_partner_taxes" groups="account.group_account_user">
+            <field name="sale_taxes_id" widget="many2many_tags"/>
+            <field name="purchase_taxes_id" widget="many2many_tags"/>
+          </group>
+        </group>
+      </field>
+    </record>
+    <record id="view_res_partner_filter_co" model="ir.ui.view">
+      <field name="name">res.partner.select.co</field>
+      <field name="model">res.partner</field>
+      <field name="inherit_id" ref="base.view_res_partner_filter"/>
+      <field name="arch" type="xml">
+        <field name="name" position="after">
+          <field name="vat"/>
+        </field>
+      </field>
+    </record>
+  </data>
+</odoo>
