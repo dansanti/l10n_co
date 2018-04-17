@@ -1,2 +1,2 @@
-# l10n_co_base
+# l10n_co_bases
 
