@@ -5,7 +5,7 @@
         <!-- IVA Excluido -->
 
         <record model="account.tax.template" id="ID_C_VENTAS_IVA_EXCLUIDAS">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">IVA Excluido (V)</field>
             <field name="description">IVA_EXCLUIDOV</field>
@@ -14,7 +14,7 @@
             <field name="type_tax_use">sale</field>
         </record>
         <record model="account.tax.template" id="ID_C_COMPRAS_IVA_EXENTAS">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">IVA Exento (C)</field>
             <field name="description">IVA_EXENTOC</field>
@@ -26,7 +26,7 @@
         <!-- IVA Exento -->
 
         <record model="account.tax.template" id="ID_C_VENTAS_IVA_EXENTAS">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">IVA Exento (V)</field>
             <field name="description">IVA_EXENTOV</field>
@@ -35,7 +35,7 @@
             <field name="type_tax_use">sale</field>
         </record>
         <record model="account.tax.template" id="ID_C_COMPRAS_IVA_EXCLUIDAS">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">IVA Excluido (C)</field>
             <field name="description">IVA_EXCLUIDOC</field>
@@ -48,7 +48,7 @@
         <!-- IVA Bienes 5% -->
 
         <record model="account.tax.template" id="ID_C_VENTAS_IVA_5">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">IVA 5% (VB)</field>
             <field name="description">IVA5VB</field>
@@ -59,7 +59,7 @@
             <field name='refund_account_id'  ref="ID_C240805"/>
         </record>
         <record model="account.tax.template" id="ID_C_COMPRAS_IVA_5">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">IVA 5% (CB)</field>
             <field name="description">IVA5CB</field>
@@ -73,7 +73,7 @@
         <!-- IVA Bienes 8% -->
 
         <record model="account.tax.template" id="ID_C_VENTAS_IVA_8">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">IVA 8% (VB)</field>
             <field name="description">IVA8VB</field>
@@ -84,7 +84,7 @@
             <field name='refund_account_id'  ref="ID_C240805"/>
         </record>
         <record model="account.tax.template" id="ID_C_COMPRAS_IVA_8">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">IVA 8% (CB)</field>
             <field name="description">IVA8CB</field>
@@ -98,7 +98,7 @@
         <!-- IVA Bienes 10% -->
 
         <record model="account.tax.template" id="ID_C_VENTAS_IVA_10">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">IVA 10% (VB)</field>
             <field name="description">IVA10VB</field>
@@ -109,7 +109,7 @@
             <field name='refund_account_id'  ref="ID_C240805"/>
         </record>
         <record model="account.tax.template" id="ID_C_COMPRAS_IVA_10">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">IVA 10% (CB)</field>
             <field name="description">IVA10CB</field>
@@ -123,7 +123,7 @@
         <!-- IVA Bienes 19% -->
 
         <record model="account.tax.template" id="ID_C_VENTAS_IVA_19">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">25</field>
             <field name="name">IVA 19% (VB)</field>
             <field name="description">IVA19VB</field>
@@ -134,7 +134,7 @@
             <field name='refund_account_id'  ref="ID_C240805"/>
         </record>
         <record model="account.tax.template" id="ID_C_COMPRAS_IVA_19">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">25</field>
             <field name="name">IVA 19% (CB)</field>
             <field name="description">IVA19CB</field>
@@ -148,7 +148,7 @@
         <!-- IVA 19% Servicios -->
 
         <record model="account.tax.template" id="ID_C_VENTAS_SERVICIOS_IVA_19">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">IVA 19% (VS)</field>
             <field name="description">IVA19VS</field>
@@ -159,7 +159,7 @@
             <field name='refund_account_id'  ref="ID_C240805"/>
         </record>
         <record model="account.tax.template" id="ID_C_COMPRAS_IVA_SERVICIOS_ADUANA_19">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">IVA 19% (CSA)</field> <!-- IVA 19% Compra Servicios Aduaneros-->
             <field name="description">IVA19CSA</field>
@@ -172,7 +172,7 @@
 
 
         <record model="account.tax.template" id="ID_C_COMPRAS_IMPORTACION_IVA_19">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">IVA 19% (CI)</field>
             <field name="description">IVA19CI</field>
@@ -186,7 +186,7 @@
         <!-- IVA 20% Compras -->
 
         <record model="account.tax.template" id="ID_C_COMPRAS_IVA_20">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">IVA 20% (C)</field>
             <field name="description">IVA20C</field>
@@ -208,7 +208,7 @@
         <!-- IVA 19% Compras Incluido en el Precio -->
 
         <record model="account.tax.template" id="ID_C_COMPRAS_PI_IVA_19">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">IVA 19% (PC)</field>
             <field name="description">PIIVA19C</field>
@@ -231,7 +231,7 @@
        <!-- IVA 19% Compras Servicios -->
 
         <record model="account.tax.template" id="ID_C_COMPRAS_SERVICIOS_IVA_19">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">IVA 19% (CS)</field>
             <field name="description">IVA19CS</field>
@@ -260,7 +260,7 @@
         <!-- Contrapartida ***************************************************************************************-->
 
         <record model="account.tax.template" id="ID_C_COMPRAS_RS_IVA_CONTRAPARTIDA">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">IVA Teórico (15%) Contrapartida</field>
             <field name="description">IVAT15C</field>
@@ -273,7 +273,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_COMPRAS_RS_IVA_19">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">IVA Teórico (15%)</field>
             <field name="description">IVAT15</field>
@@ -284,7 +284,7 @@
             <field name='refund_account_id'  ref="ID_C240810"/>
         </record>
         <record model="account.tax.template" id="ID_C_COMPRAS_RS_IVA_TEORICO_B">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">IVA Teórico Servicios (15%) Bienes</field>
             <field name="amount">1.0</field>
@@ -302,7 +302,7 @@
         <!-- Contrapartida -->
 
         <record model="account.tax.template" id="ID_C_COMPRAS_RS_IVA_CONTRAPARTIDA_S">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">IVA Teórico Servicios (15%) Contrapartida</field>
             <field name="description">IVAT15CS</field>
@@ -315,7 +315,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_COMPRAS_RS_IVA_19_S">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">IVA Teórico Servicios (15%)</field>
             <field name="description">IVAT15S</field>
@@ -327,7 +327,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_COMPRAS_RS_IVA_TEORICO_S">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">IVA Teórico Servicios (15%) Servicios</field>
             <field name="amount">1.0</field>
@@ -340,7 +340,7 @@
         <!-- Retencion IVA 15% sobre el 5%-->
 
         <record model="account.tax.template" id="ID_C_RF_VENTAS_IVA_05">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RIVA 15% IVA 5%(V)</field>
             <field name="description">RIVA15V05</field>
@@ -354,7 +354,7 @@
         <!-- Retencion IVA 15% sobre el 8%-->
 
         <record model="account.tax.template" id="ID_C_RF_VENTAS_IVA_08">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RIVA 15% IVA 8%(V)</field>
             <field name="description">RIVA15V08</field>
@@ -369,7 +369,7 @@
         <!-- Retencion IVA 15% sobre el 19%-->
 
         <record model="account.tax.template" id="ID_C_RF_VENTAS_IVA_19">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RIVA 15% IVA 19%(V)</field>
             <field name="description">RIVA15V</field>
@@ -384,7 +384,7 @@
         <!-- Retencion IVA 50% -->
 
         <record model="account.tax.template" id="ID_C_RF_VENTAS_IVA_50">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RIVA 50% (V)</field>
             <field name="description">RIVA50V</field>
@@ -398,7 +398,7 @@
         <!-- Retencion IVA 70% -->
 
         <record model="account.tax.template" id="ID_C_RF_VENTAS_IVA_70">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RIVA 70% (V)</field>
             <field name="description">RIVA70V</field>
@@ -411,7 +411,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_RF_COMPRAS_IVA_15">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RIVA 15% (C)</field>
             <field name="description">RIVA15C</field>
@@ -424,7 +424,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_RF_COMPRAS_IVA_119">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RIVA 119% (C)</field>
             <field name="description">RIVA119C</field>
@@ -439,7 +439,7 @@
         <!-- Retencion en la FUENTE VENTASS -->
 
         <record model="account.tax.template" id="ID_C_VENTAS_RF_01">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 0.1% Combustibles (V)</field>
             <field name="description">RF01VC</field>
@@ -454,7 +454,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_VENTAS_RFVTC_1">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 1% T.Carga (V)</field>
             <field name="description">RF1VTC</field>
@@ -474,7 +474,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_VENTAS_RFVTP_35">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 3.5% T.Pasajeros (V)</field>
             <field name="description">RF35VTP</field>
@@ -494,7 +494,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_VENTAS_RF_1_5">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 1.5% (V)</field>
             <field name="description">RF15V</field>
@@ -514,7 +514,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_VENTAS_RF_2">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 2% (V)</field>
             <field name="description">RF2V</field>
@@ -534,7 +534,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_VENTAS_RF_2_5">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 2.5% (V)</field>
             <field name="description">RF25V</field>
@@ -554,7 +554,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_VENTAS_RF_3_5_VS">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 3.5% (VS)</field>
             <field name="description">RF35VS</field>
@@ -574,7 +574,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_VENTAS_RF_3_5">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 3.5% (V)</field>
             <field name="description">RF35V</field>
@@ -594,7 +594,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_VENTAS_RF_3_5_INMUEBLES">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 3.5% Inmuebles (V)</field>
             <field name="description">RF35V_I</field>
@@ -614,7 +614,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_VENTAS_RF_4_NO_INMUEBLES">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 4% No Inmuebles(V)</field>
             <field name="description">RF4VNI</field>
@@ -634,7 +634,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_VENTAS_RF_4">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 4% (V)</field>
             <field name="description">RF4V</field>
@@ -655,7 +655,7 @@
 
 
         <record model="account.tax.template" id="ID_C_VENTAS_RF_4S">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 4% (VS)</field>
             <field name="description">RF4VS</field>
@@ -675,7 +675,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_VENTAS_RF_6">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 6% (V)</field>
             <field name="description">RF6V</field>
@@ -695,7 +695,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_VENTAS_RF_10">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 10% (V)</field>
             <field name="description">RF10V</field>
@@ -715,7 +715,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_VENTAS_RF_11">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 11% (V)</field>
             <field name="description">RF11V</field>
@@ -737,7 +737,7 @@
         <!-- Retencion en la FUENTE COMPRAS -->
 
         <record model="account.tax.template" id="ID_C_COMPRAS_RF_01">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 0.1% Combustibles (C)</field>
             <field name="description">RF01CC</field>
@@ -757,7 +757,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_COMPRAS_RFCTC_1">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 1% T.Carga (C)</field>
             <field name="description">RF1CTC</field>
@@ -777,7 +777,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_COMPRAS_RFCTP_35">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 3.5% T.Pasajeros (C)</field>
             <field name="description">RF35CTP</field>
@@ -797,7 +797,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_COMPRAS_RF_1_5">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 1.5% (C)</field>
             <field name="description">RF15C</field>
@@ -817,7 +817,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_COMPRAS_RF_2">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 2% (C)</field>
             <field name="description">RF2C</field>
@@ -838,7 +838,7 @@
 
 
         <record model="account.tax.template" id="ID_C_COMPRAS_RF_2CC">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 2% Contrato Obra (C)</field>
             <field name="description">RF2COC</field>
@@ -858,7 +858,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_COMPRAS_RF_2_5">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 2.5% (C)</field>
             <field name="description">RF25C</field>
@@ -878,7 +878,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_COMPRAS_RF_3_5">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 3.5% (C)</field>
             <field name="description">RF35C</field>
@@ -898,7 +898,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_COMPRAS_RF_3_5_CS">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 3.5% (CS)</field>
             <field name="description">RF35CS</field>
@@ -919,7 +919,7 @@
 
 
         <record model="account.tax.template" id="ID_C_COMPRAS_RF_3_5_INMUEBLES">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 3.5% Inmuebles (C)</field>
             <field name="description">RF35C_I</field>
@@ -939,7 +939,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_COMPRAS_RF_4_NO_INMUEBLES">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 4% No Inmuebles(C)</field>
             <field name="description">RF4CNI</field>
@@ -959,7 +959,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_COMPRAS_RF_4">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 4% (C)</field>
             <field name="description">RF4C</field>
@@ -979,7 +979,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_COMPRAS_RF_4_SERVICIOS">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 4% (CS)</field>
             <field name="description">RF4CS</field>
@@ -999,7 +999,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_COMPRAS_RF_2RF">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 4% Rendimiento Financiero (C)</field>
             <field name="description">RF2RFC</field>
@@ -1019,7 +1019,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_COMPRAS_RF_6">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 6% (C)</field>
             <field name="description">RF6C</field>
@@ -1039,7 +1039,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_COMPRAS_RF_6_SERVICIOS">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 6% (CS)</field>
             <field name="description">RF6CS</field>
@@ -1059,7 +1059,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_COMPRAS_RF_10">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 10% Comisiones (C)</field>
             <field name="description">RF10C</field>
@@ -1079,7 +1079,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_COMPRAS_RF_10">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 10% Honorarios (C)</field>
             <field name="description">RF10CH</field>
@@ -1099,7 +1099,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_COMPRAS_RF_11">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 11% Comisiones (C)</field>
             <field name="description">RF11C</field>
@@ -1117,7 +1117,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_VENTAS_RF_11">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 11% Honorarios (V)</field>
             <field name="description">RF11VH</field>
@@ -1131,7 +1131,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_COMPRAS_RF_11">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">RF 11% Honorarios (C)</field>
             <field name="description">RF11CH</field>
@@ -1148,7 +1148,7 @@
         <!-- Rentencion en la fuenta ICA Ventas -->
 
         <record model="account.tax.template" id="ID_C_VENTAS_RF_ICA_138">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">10</field>
             <field name="name">ICA 1.38% (V)</field>
             <field name="description">ICA138V</field>
@@ -1160,7 +1160,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_VENTAS_RF_ICA_414">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">10</field>
             <field name="name">ICA 4.14% (V)</field>
             <field name="description">ICA414V</field>
@@ -1172,7 +1172,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_VENTAS_RF_ICA_69">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">10</field>
             <field name="name">ICA 6.9% (V)</field>
             <field name="description">ICA69V</field>
@@ -1184,7 +1184,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_VENTAS_RF_ICA_7">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">10</field>
             <field name="name">ICA 7% (V)</field>
             <field name="description">ICA7V</field>
@@ -1198,7 +1198,7 @@
         <!-- ICA Retension (Definir el el 3ro) -->
 
         <record model="account.tax.template" id="ID_C_VENTAS_RF_ICA_966">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">10</field>
             <field name="name">ICA 9.66% (V)</field>
             <field name="description">ICA966V</field>
@@ -1210,7 +1210,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_VENTAS_RF_ICA_11">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">10</field>
             <field name="name">ICA 11% (V)</field>
             <field name="description">ICA11V</field>
@@ -1223,7 +1223,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_VENTAS_RF_ICA_1104">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">10</field>
             <field name="name">ICA 11.04% (V)</field>
             <field name="description">ICA1104V</field>
@@ -1236,7 +1236,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_VENTAS_RF_ICA_1308">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">10</field>
             <field name="name">ICA 13,8% (V)</field>
             <field name="description">ICA1308V</field>
@@ -1251,7 +1251,7 @@
         <!-- Rentencion en la fuenta ICA Compras -->
 
         <record model="account.tax.template" id="ID_C_COMPRAS_RF_ICA_138">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">10</field>
             <field name="name">ICA 1.38% (C)</field>
             <field name="description">ICA138C</field>
@@ -1263,7 +1263,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_COMPRAS_RF_ICA_414">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">10</field>
             <field name="name">ICA 4.14% (C)</field>
             <field name="description">ICA414C</field>
@@ -1275,7 +1275,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_COMPRAS_RF_ICA_5">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">10</field>
             <field name="name">ICA 5% (C)</field>
             <field name="description">ICA5C</field>
@@ -1287,7 +1287,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_COMPRAS_RF_ICA_6">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">10</field>
             <field name="name">ICA 6% (C)</field>
             <field name="description">ICA6C</field>
@@ -1299,7 +1299,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_COMPRAS_RF_ICA_69">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">10</field>
             <field name="name">ICA 6.9% (C)</field>
             <field name="description">ICA69C</field>
@@ -1311,7 +1311,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_COMPRAS_RF_ICA_7">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">10</field>
             <field name="name">ICA 7% (C)</field>
             <field name="description">ICA7C</field>
@@ -1323,7 +1323,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_COMPRAS_RF_ICA_966">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">10</field>
             <field name="name">ICA 9.66% (C)</field>
             <field name="description">ICA966C</field>
@@ -1335,7 +1335,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_COMPRAS_RF_ICA_11">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">10</field>
             <field name="name">ICA 11% (C)</field>
             <field name="description">ICA11C</field>
@@ -1348,7 +1348,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_COMPRAS_RF_ICA_1104">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">10</field>
             <field name="name">ICA 11.04% (C)</field>
             <field name="description">ICA1104C</field>
@@ -1361,7 +1361,7 @@
         </record>
 
         <record model="account.tax.template" id="ID_C_COMPRAS_RF_ICA_1308">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">10</field>
             <field name="name">ICA 13,8% (C)</field>
             <field name="description">ICA1308C</field>
@@ -1376,7 +1376,7 @@
         <!-- GASTO 4% Compras -->
 
         <record model="account.tax.template" id="ID_C_COMPRAS_GASTO_4">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">GASTO 4% (C)</field>
             <field name="description">GASTO4C</field>
@@ -1390,7 +1390,7 @@
         <!-- GASTO 4% Compras -->
 
         <record model="account.tax.template" id="ID_C_COMPRAS_IPOCONSUMO_8">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">Impuesto al Consumo 8% (C)</field>
             <field name="description">IC8C</field>
@@ -1424,7 +1424,7 @@
 
 
         <record model="account.tax.template" id="ID_C_VENTAS_RF_ATR_4_CONTRAPARTIDA">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">Contrapartida AUTORETENCION a TR 0.4% (V)</field>
             <field name="description">CATR4V</field>
@@ -1435,7 +1435,7 @@
             <field name='refund_account_id'  ref="ID_C236575"/>
         </record>
         <record model="account.tax.template" id="ID_C_VENTAS_RF_ATR_4">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">20</field>
             <field name="name">AUTORETENCION a TR 0.4% (V)</field>
             <field name="description">ATR4V</field>
@@ -1446,7 +1446,7 @@
             <field name='refund_account_id'  ref="ID_C135595"/>
         </record>
         <record model="account.tax.template" id="ID_C_VENTAS_ATR_4">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">0</field>
             <field name="name">Autoretención a Título de Renta 0.4% (V)</field>
             <field name="description">AATR4V</field>
@@ -1460,7 +1460,7 @@
 
 
         <record model="account.tax.template" id="ID_C_VENTAS_RF_ATR_8_CONTRAPARTIDA">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">Contrapartida AUTORETENCION a TR 0.8% (V)</field>
             <field name="description">CATR8V</field>
@@ -1471,7 +1471,7 @@
             <field name='refund_account_id'  ref="ID_C236575"/>
         </record>
         <record model="account.tax.template" id="ID_C_VENTAS_RF_ATR_8">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">20</field>
             <field name="name">AUTORETENCION a TR 0.8% (V)</field>
             <field name="description">ATR8V</field>
@@ -1482,7 +1482,7 @@
             <field name='refund_account_id'  ref="ID_C135595"/>
         </record>
         <record model="account.tax.template" id="ID_C_VENTAS_ATR_8">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">0</field>
             <field name="name">Autoretención a Título de Renta 0.8% (V)</field>
             <field name="description">AATR8V</field>
@@ -1498,7 +1498,7 @@
 
 
         <record model="account.tax.template" id="ID_C_VENTAS_RF_ATR_16_CONTRAPARTIDA">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">15</field>
             <field name="name">Contrapartida AUTORETENCION a TR 1.6% (V)</field>
             <field name="description">CATR16V</field>
@@ -1509,7 +1509,7 @@
             <field name='refund_account_id'  ref="ID_C236575"/>
         </record>
         <record model="account.tax.template" id="ID_C_VENTAS_RF_ATR_16">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">20</field>
             <field name="name">AUTORETENCION a TR 1.6% (V)</field>
             <field name="description">ATR16V</field>
@@ -1520,7 +1520,7 @@
             <field name='refund_account_id'  ref="ID_C135595"/>
         </record>
         <record model="account.tax.template" id="ID_C_VENTAS_ATR_16">
-            <field name="chart_template_id" ref="co_coa_commercial"/>
+            <field name="chart_template_id" ref="l10n_co_comercial"/>
             <field name="sequence">0</field>
             <field name="name">Autoretención a Título de Renta 1.6% (V)</field>
             <field name="description">AATR16V</field>

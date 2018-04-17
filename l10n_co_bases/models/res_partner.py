@@ -119,7 +119,7 @@ class ResPartner(models.Model):
     @api.depends('vat', 'vat_type', 'vat_vd')
     @api.constrains("vat_vd")
     def check_vat_dv(self):
-        if self.vat_type == '31' and self.vat and not self.check_vat_co(self.vat, self.vat_vd):
+        if self.vat_type == '31' and not self.check_vat_co():
             _logger.info(u'Importing VAT Number [%s - %i] for "%s" is not valid !' % (self.vat, self.vat_vd, self.name))
             raise ValidationError(u'NIT/RUT [%s - %i] suministrado para "%s" no supera la prueba del dígito de verificacion!' %
                                   (self.vat, self.vat_vd, self.name))
@@ -132,14 +132,19 @@ class ResPartner(models.Model):
         if self.vat:
             if len(self.search(
                     [
-                        ('company_id','=',self.company_id),
+                        ('company_id','=',self.company_id.id),
                         ('vat','=',self.vat)
                     ]
                 )) != 1:
                 raise ValidationError(u'Identificación [%s] suministrado para "%s" ya existe' %
                                      (self.vat, self.name))
         return True
-    def check_vat_co(self, vat, vat_vd):
+    
+    
+    @api.one
+    def check_vat_co(self):
+        vat = self.vat
+        vat_vd = self.vat_vd
         factor = (71, 67, 59, 53, 47, 43, 41, 37, 29, 23, 19, 17, 13, 7, 3)
         vat = vat.rjust(15, '0')
         csum = sum([int(vat[i]) * factor[i] for i in range(15)])
