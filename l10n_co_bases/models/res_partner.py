@@ -57,24 +57,22 @@ class ResPartner(models.Model):
         help=u'Código industrial internacional uniforme (CIIU)'
     )
 
-    sale_taxes_id = fields.Many2many(
+    taxes_ids = fields.Many2many(
         string="Customer taxes",
         comodel_name="account.tax",
         relation="partner_tax_sale_rel",
         column1="partner_id",
         column2="tax_id",
         domain="[('type_tax_use','=','sale')]",
-        context={"default_type_tax_use": "sale"},
         help="Taxes applied for sale.",
     )
-    purchase_taxes_id =  fields.Many2many(
+    supplier_taxes_ids =  fields.Many2many(
         string="Supplier taxes",
         comodel_name="account.tax",
         relation="partner_tax_purchase_rel",
         column1="partner_id",
         column2="tax_id",
         domain="[('type_tax_use','=','purchase')]",
-        context={"default_type_tax_use": "sale"},
         help="Taxes applied for purchase.",
     )
 
@@ -115,12 +113,14 @@ class ResPartner(models.Model):
         else:
             self.vat_ref = self.vat
 
-    @api.one
-    @api.depends('vat', 'vat_type', 'vat_vd')
+    @api.multi
     @api.constrains("vat_vd")
     def check_vat_dv(self):
-        if self.vat_type == '31' and not self.check_vat_co():
-            _logger.info(u'Importing VAT Number [%s - %i] for "%s" is not valid !' % (self.vat, self.vat_vd, self.name))
+        self.ensure_one()
+        if self.vat_type == '31' and self.vat and self.vat_vd and \
+           not self.check_vat_co():
+            _logger.info(u'Importing VAT Number [%s - %i] for "%s" is not valid !' %
+                        (self.vat, self.vat_vd, self.name))
             raise ValidationError(u'NIT/RUT [%s - %i] suministrado para "%s" no supera la prueba del dígito de verificacion!' %
                                   (self.vat, self.vat_vd, self.name))
         return True
@@ -139,10 +139,16 @@ class ResPartner(models.Model):
                 raise ValidationError(u'Identificación [%s] suministrado para "%s" ya existe' %
                                      (self.vat, self.name))
         return True
-    
-    
-    @api.one
+
+    @api.multi
+    @api.onchange("vat_type", "vat", "vat_vd", )
+    def _onchange_vat_vd(self):
+        self.ensure_one()
+        return self.check_vat_dv()
+
+    @api.multi
     def check_vat_co(self):
+        self.ensure_one()
         vat = self.vat
         vat_vd = self.vat_vd
         factor = (71, 67, 59, 53, 47, 43, 41, 37, 29, 23, 19, 17, 13, 7, 3)

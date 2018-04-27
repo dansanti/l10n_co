@@ -27,7 +27,6 @@ class ResCountry(models.Model):
             args = []
         args = args[:]
         ids = []
-
         if name:
             ids = self.search([('code_dian', '=like', name + "%")] + args, limit=limit)
             if not ids:
@@ -39,7 +38,6 @@ class ResCountry(models.Model):
 
         if ids:
             return ids.name_get()
-
         return self.name_get()
 
 class ResCountryState(models.Model):
@@ -51,7 +49,6 @@ class ResCountryState(models.Model):
         for recs in self:
             name = '%s [%s]' % (recs.name or '', recs.code or '')
             rec += [ (recs.id, name) ]
-
         return rec
 
     @api.model
@@ -60,7 +57,6 @@ class ResCountryState(models.Model):
             args = []
         args = args[:]
         ids = []
-
         if name:
             ids = self.search([('code', '=like', name + "%")] + args, limit=limit)
             if not ids:
@@ -70,5 +66,4 @@ class ResCountryState(models.Model):
 
         if ids:
             return ids.name_get()
-
         return self.name_get()

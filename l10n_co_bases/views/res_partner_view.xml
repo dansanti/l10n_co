@@ -37,16 +37,20 @@
         <field name="type" position="after">
           <label for="vat" string="Identificación"/>
           <div>
-            <field name="display_name"/>
+            <field name="display_name"
+                   style="width: 100%%"/>
             <field name="property_account_position_id"
                    options='{"no_open": True, "no_create": True}'
-                   placeholder="Tipo de Contribuyente"/>
+                   placeholder="Tipo de Contribuyente"
+                   style="width: 50%%"/>
             <field name="ciiu_id"
                    options='{"no_open": True, "no_create": True}'
-                   placeholder="Codigo CIIU"/>
+                   placeholder="Codigo CIIU"
+                   style="width: 50%%"/>
             <field name="vat_type"
-                   placeholder="Tipo de Documento"/>
-            <field name="vat_ref" style="width: 100%%"/>
+                   placeholder="Tipo de Documento"
+                   style="width: 40%%"/>
+            <field name="vat_ref" style="width: 60%%"/>
             <div class="oe_edit_only">
                 <field name="vat" style="width: 70%%"/> -
                 <field name="vat_vd" style="width: 20%%"
@@ -56,8 +60,8 @@
         </field>
         <group name="accounting_entries" position="after">
           <group string="Taxes" name="accounting_partner_taxes" groups="account.group_account_user">
-            <field name="sale_taxes_id" widget="many2many_tags"/>
-            <field name="purchase_taxes_id" widget="many2many_tags"/>
+            <field name="taxes_ids" widget="many2many_tags"/>
+            <field name="supplier_taxes_ids" widget="many2many_tags"/>
           </group>
         </group>
       </field>
