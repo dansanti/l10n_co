@@ -4,10 +4,11 @@
 
 from . import (
     res_ciiu,
-    res_partner,
     res_company,
+    res_partner,
     res_country,
     account_tax,
     account_journal,
     account_invoice,
+    product_category,
 )
