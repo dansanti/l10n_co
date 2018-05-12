@@ -10,5 +10,5 @@ from . import (
     account_tax,
     account_journal,
     account_invoice,
-    #product_category,
+    product_category,
 )
