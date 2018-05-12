@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_category_taxes_form" model="ir.ui.view">
+            <field name="name">product.category.taxes.form.inherit</field>
+            <field name="model">product.category</field>
+            <field name="inherit_id" ref="account.view_category_property_form"/>
+            <field name="arch" type="xml">
+                <group name="account_property" position="inside">
+                    <group name="account_taxes" >
+                        <group string="Taxes Properties" groups="account.group_account_user">
+                            <field name="taxes_ids" widget="many2many_tags"/>
+                            <field name="supplier_taxes_ids"  widget="many2many_tags"/>
+                        </group>
+                    </group>
+                </group>
+            </field>
+        </record>
+    </data>
+</odoo>

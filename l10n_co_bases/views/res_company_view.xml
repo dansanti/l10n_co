@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+      <record id="view_company_localization_form" model="ir.ui.view">
+          <field name="name">res.company.localization.form</field>
+          <field name="model">res.company</field>
+          <field name="inherit_id" ref="base.view_company_form"/>
+          <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+              <page string="Localization">
+                <group name="account_property" position="inside">
+                    <group name="account_taxes" >
+                        <group string="Taxes Properties" groups="account.group_account_user" cols="4">
+                            <field name="default_taxes_ids" widget="many2many_tags"/>
+                            <field name="default_supplier_taxes_ids"  widget="many2many_tags"/>
+                        </group>
+                    </group>
+                </group>
+              </page>
+            </xpath>
+          </field>
+        </record>
+    </data>
+</odoo>
