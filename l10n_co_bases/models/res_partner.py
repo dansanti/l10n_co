@@ -130,21 +130,21 @@ class ResPartner(models.Model):
     def check_vat(self):
         self.vat.strip()
         if self.vat:
-            if len(self.search(
+            if self.search(
                     [
-                        ('company_id','=',self.company_id.id),
-                        ('vat','=',self.vat)
+                        ('vat','=',self.vat),
+                        ('commercial_partner_id', '!=', self.commercial_partner_id.id),
                     ]
-                )) != 1:
+                ):
                 raise ValidationError(u'Identificación [%s] suministrado para "%s" ya existe' %
-                                     (self.vat, self.name))
+                                     (self.vat, self.commercial_partner_id.name))
         return True
 
     @api.multi
     @api.onchange("vat_type", "vat", "vat_vd", )
     def _onchange_vat_vd(self):
         self.ensure_one()
-        return self.check_vat_dv()
+        self.check_vat_dv()
 
     @api.multi
     def check_vat_co(self):
