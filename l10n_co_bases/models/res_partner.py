@@ -144,7 +144,7 @@ class ResPartner(models.Model):
     @api.onchange("vat_type", "vat", "vat_vd", )
     def _onchange_vat_vd(self):
         self.ensure_one()
-        return self.check_vat_dv()
+        self.check_vat_dv()
 
     @api.multi
     def check_vat_co(self):
